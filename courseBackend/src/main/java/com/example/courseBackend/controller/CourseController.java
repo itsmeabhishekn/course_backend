@@ -41,4 +41,13 @@ public class CourseController {
     {
         return (List<Courses>) dao.findAll();
     }
+
+    @CrossOrigin(origins = "*")
+    @PostMapping(path="/search",consumes = "application/json",produces = "application/json")
+    public List<Courses> search(@RequestBody Courses s)
+    {
+        String courseTitle = s.getCourseTitle();
+        System.out.println(courseTitle);
+        return (List<Courses>) dao.search(s.getCourseTitle());
+    }
 }

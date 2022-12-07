@@ -13,21 +13,21 @@ public class Courses {
     @GeneratedValue
     private int id;
     private String courseTitle;
-    private String courseDesc;
-    private String venue;
-    private String duration;
-    private String date;
+    private String courseDescription;
+    private String courseVenue;
+    private String courseDuration;
+    private String courseDate;
 
     public Courses() {
     }
 
-    public Courses(int id,String courseTitle, String courseDesc, String venue, String duration, String date) {
+    public Courses(int id,String courseTitle, String courseDescription, String courseVenue, String courseDuration, String courseDate) {
         this.id = id;
         this.courseTitle = courseTitle;
-        this.courseDesc = courseDesc;
-        this.venue = venue;
-        this.duration = duration;
-        this.date = date;
+        this.courseDescription = courseDescription;
+        this.courseVenue = courseVenue;
+        this.courseDuration = courseDuration;
+        this.courseDate = courseDate;
     }
 
     public String getCourseTitle() {
@@ -39,19 +39,19 @@ public class Courses {
     }
 
     public String getCourseDesc() {
-        return courseDesc;
+        return courseDescription;
     }
 
     public void setCourseDesc(String courseDesc) {
-        this.courseDesc = courseDesc;
+        this.courseDescription = courseDesc;
     }
 
     public String getVenue() {
-        return venue;
+        return courseVenue;
     }
 
-    public void setVenue(String venue) {
-        this.venue = venue;
+    public void setVenue(String courseVenue) {
+        this.courseVenue = courseVenue;
     }
 
     public int getId() {
@@ -63,18 +63,18 @@ public class Courses {
     }
 
     public String getDuration() {
-        return duration;
+        return courseDuration;
     }
 
-    public void setDuration(String duration) {
-        this.duration = duration;
+    public void setDuration(String courseDuration) {
+        this.courseDuration = courseDuration;
     }
 
     public String getDate() {
-        return date;
+        return courseDate;
     }
 
-    public void setDate(String date) {
-        this.date = date;
+    public void setDate(String courseDate) {
+        this.courseDate = courseDate;
     }
 }
